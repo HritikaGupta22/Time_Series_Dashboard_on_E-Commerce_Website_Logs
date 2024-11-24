@@ -58,8 +58,6 @@ This dataset captures detailed logs from an e-commerce website, offering insight
 
 [![Ecommerce Website log Dashboard on Grafna](https://www.youtube.com/watch?v=KEeDcjHAKhg))]
 
-[Ecommerce Website log Dashboard on Grafna](https://www.youtube.com/watch?v=KEeDcjHAKhg) "Ecommerce Website log Dashboard on Grafna")
-https://www.youtube.com/watch?v=KEeDcjHAKhg
 
 ## Interpretations
 **General Insights**
