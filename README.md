@@ -9,9 +9,14 @@ This dataset captures detailed logs from an e-commerce website, offering insight
 ## Queries
 ****About Data****
 - What is the Total Sales?
+
+  select Sum("sales") from "churn";
 - What is the Mean Returned Amount?
+
+  select mean("returned_amount") from "churn";
 - How much is the Average Bytes?
-- 
+
+  select mean("bytes") from "churn";
 ****Sales and Revenue****
 - What is the trend of sales over a time?
 
