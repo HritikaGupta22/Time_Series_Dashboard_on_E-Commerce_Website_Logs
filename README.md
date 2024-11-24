@@ -7,6 +7,8 @@ The data for the E-Commerce Website Log was sourced from Kaggle. The dataset was
 This dataset captures detailed logs from an e-commerce website, offering insights into user behavior and sales performance. It includes the time and duration of website access, IP addresses, and corresponding countries, allowing for geographic and temporal analysis. Information on the language and platform used provides insights into user preferences and device trends. Key metrics such as sales amounts, return amounts, and bytes consumed link user activity to revenue generation and data usage patterns. This dataset enables the creation of dashboards to analyze global reach, peak activity times, revenue trends, and platform optimization, making it a valuable resource for e-commerce analytics.
 
 ## Queries
+****About Data****
+
 ****Sales and Revenue****
 - What is the trend of sales over a time?
 
@@ -53,7 +55,11 @@ This dataset captures detailed logs from an e-commerce website, offering insight
 
 
 ## Interpretations
-
+**General Insights**
+- The gauge shows total sales over the last day, amounting to **250,438 units**. This reflects the overall revenue-driving metric and is useful for monitoring the performance during the specified period. The high value indicates strong transactional activity, but trends over time can provide deeper insights.
+- The mean returned amount is **34.0**, indicating that on average, customers return items worth this amount. This can signify issues with product quality, mismatched expectations, or other factors leading to returns. Monitoring this metric over time can reveal customer satisfaction trends.
+- The **1,684 average bytes** metric represents average data usage per session. This provides insights into user activity levels on the platform, potentially indicating engagement trends or issues with high data consumption for slower connections.
+  
 **Sales and Revenue Analysis**  
 - The gauge shows total sales over the last day, amounting to *250,438 units*. This reflects the overall revenue-driving metric and is useful for monitoring the performance during the specified period. The high value indicates strong transactional activity, but trends over time can provide deeper insights.  
 - The line graph shows sales activity over 24 hours, with noticeable spikes around *evening hours (18:00 - 21:00)*. This suggests higher customer activity during these hours, likely due to after-work shopping. The graph can help optimize promotional campaigns during peak times.  
