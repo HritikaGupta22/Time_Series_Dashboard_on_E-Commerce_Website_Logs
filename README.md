@@ -54,4 +54,21 @@ This dataset captures detailed logs from an e-commerce website, offering insight
 
 ## Interpretations
 
-## Interpretations
+**Sales and Revenue Analysis**  
+- The gauge shows total sales over the last day, amounting to *250,438 units*. This reflects the overall revenue-driving metric and is useful for monitoring the performance during the specified period. The high value indicates strong transactional activity, but trends over time can provide deeper insights.  
+- The line graph shows sales activity over 24 hours, with noticeable spikes around *evening hours (18:00 - 21:00)*. This suggests higher customer activity during these hours, likely due to after-work shopping. The graph can help optimize promotional campaigns during peak times.  
+- India (IN) overwhelmingly dominates sales performance, with *91,138 total sales*, while other countries like Russia, Peru, and Germany contribute marginally. This highlights India's key market position and suggests a potential need to boost international marketing efforts.  
+- Premium members consistently drive higher sales compared to Normal members over hourly intervals. This validates the importance of premium memberships in contributing to revenue and suggests opportunities for further incentivizing upgrades.  
+- Female customers contribute *58%* of total sales, while males account for *42%*. This indicates a slightly higher spending pattern among females, which could inform product targeting and marketing campaigns.  
+
+**User Behavior Trends**  
+- The *1,684 average bytes* metric represents average data usage per session. This provides insights into user activity levels on the platform, potentially indicating engagement trends or issues with high data consumption for slower connections.  
+- Premium members consume more data than normal members, indicating higher engagement or activity levels. The trend also shows a steady decline in data usage after peak activity hours, suggesting users' habits.  
+- The graph compares session counts across various browsers. *Android App sessions dominate*, indicating mobile app popularity, while other platforms have lower engagement. Insights from this graph could direct resources to further optimize the mobile app experience.  
+
+**Returns and Refunds** 
+- The mean returned amount is *34.0*, indicating that on average, customers return items worth this amount. This can signify issues with product quality, mismatched expectations, or other factors leading to returns. Monitoring this metric over time can reveal customer satisfaction trends.  
+- Returns filtered by payment methods show that *Cash* and *Credit Card* have higher returned amounts, while Debit Card and Other methods have relatively fewer returns. This could indicate differences in customer confidence or fraud detection in certain payment methods.  
+
+**Prediction of Sales** 
+- Predicted sales for premium members and TCP network protocol show a value of *34.7*, suggesting consistent engagement in this segment. This metric can guide future infrastructure planning and promotional strategies for premium memberships.
