@@ -9,6 +9,7 @@ This dataset captures detailed logs from an e-commerce website, offering insight
 ## Queries
 ****Sales and Revenue Analysis****
 - What is the trend of sales over a time?
+
   SELECT "sales" FROM "churn" WHERE "time" >= now() - 1d;
 - How do sales vary across different countries group by 1 hr?
   SELECT SUM("sales") AS "Total Sales" INTO "COUNTRY_WISE_SALES" FROM "churn" WHERE time >= now() - 1d GROUP BY "country";
