@@ -55,6 +55,7 @@ This dataset captures detailed logs from an e-commerce website, offering insight
   SELECT moving_average("sales", 3) FROM "churn" WHERE "membership" = 'Premium' AND "network_protocol" = 'TCP' and time > now() -1h;
 
 ## Dashboard
+[Ecommerce Website log Dashboard on Grafna](https://www.youtube.com/watch?v=KEeDcjHAKhg) "Ecommerce Website log Dashboard on Grafna")
 https://www.youtube.com/watch?v=KEeDcjHAKhg
 
 ## Interpretations
