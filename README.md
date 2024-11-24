@@ -24,22 +24,18 @@ This dataset captures detailed logs from an e-commerce website, offering insight
   SELECT count(“sales”) FROM "churn" GROUP BY time(1h),"accessed_Ffom";
 - How does data usage (bytes) trend every 5 minutes, grouped by membership types (Normal, Premium)?
   SELECT sum("bytes") FROM "churn"GROUP BY time(1d),"membership";
+- How does the total returned_amount trend in 10-minute intervals, filtered by payment method?
+  SELECT sum("returned_amount") FROM "churn" GROUP BY time(1d), "pay_method";
 
 ****Returns and Refunds****
-What is the number of returned transactions (Yes/No) in the last 30 minutes, grouped by country?
-How does the total returned_amount trend in 10-minute intervals, filtered by payment method?
-What is the hourly trend of returns (Yes/No) by gender?
-How do returned transactions in the last 1 hour vary by browser type (e.g., Chrome, Firefox)?
+- What is the data consumption (bytes) trend over 10 minutes, grouped by country?
+  SELECT sum("bytes") AS "Data Consumption (Bytes)" FROM "churn" GROUP BY time(1d),"country";
+- How does sales performance fluctuate in 5-minute intervals for the top 5 countries by sales?
+  SELECT "country" INTO top_countries FROM "churn" GROUP BY "country" ORDER BY sum("sales") DESC LIMIT 5)
+  SELECT sum("sales") FROM "top_countries" GROUP BY time(1h),"country"
 
-
-****Geographic Analysis****
-What is the data consumption (bytes) trend over 10 minutes, grouped by country?
-How does sales performance fluctuate in 5-minute intervals for the top 5 countries by sales?
-
-****Performance Metrics****
-What is the correlation between session duration (duration_(secs)) and sales in the last 30 
-minutes?
-
+****Prediction of Sales****
+SELECT moving_average("sales", 3) FROM "churn" WHERE "membership" = 'Premium' AND "network_protocol" = 'TCP' and time > now() -1h;
 
 ## Dashboard
 
