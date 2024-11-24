@@ -61,7 +61,8 @@ This dataset captures detailed logs from an e-commerce website, offering insight
 
 ## Dashboard
 
-[![E-Commerce Website Log Data](https://www.youtube.com/watch?v=KEeDcjHAKhg)](https://www.youtube.com/watch?v=KEeDcjHAKhg)
+[![E-Commerce Website Log Data](![image (1)](https://github.com/user-attachments/assets/359a620c-d702-4eab-b3eb-205a887efce5)
+)](https://www.youtube.com/watch?v=KEeDcjHAKhg)
 
 ## Interpretations
 **General Insights**
