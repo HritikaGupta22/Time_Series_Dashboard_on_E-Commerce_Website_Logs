@@ -35,6 +35,7 @@ This dataset captures detailed logs from an e-commerce website, offering insight
   SELECT sum("sales") FROM "top_countries" GROUP BY time(1h),"country"
 
 ****Prediction of Sales****
+- What will be the sales for the Premium Membership and TCP network Protocol?
 SELECT moving_average("sales", 3) FROM "churn" WHERE "membership" = 'Premium' AND "network_protocol" = 'TCP' and time > now() -1h;
 
 ## Dashboard
