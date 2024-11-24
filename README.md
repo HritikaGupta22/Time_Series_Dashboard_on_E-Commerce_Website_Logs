@@ -8,12 +8,17 @@ This dataset captures detailed logs from an e-commerce website, offering insight
 
 ## Queries
 ****Sales and Revenue Analysis****
-What are the total sales in every 5 minutes?
-How do sales vary across different countries group by 10 min?
-What is the trend of sales by payment method (Credit Card, Debit Card, Cash) over 10 min?
-How do sales differ between male and female customers in last 1 hr?
-How do sales from different membership types (Normal, Premium, etc.) vary in 5 minutes?
-
+- What is the trend of sales over a time?
+  SELECT "sales" FROM "churn" WHERE "time" >= now() - 1d;
+- How do sales vary across different countries group by 1 hr?
+  SELECT SUM("sales") AS "Total Sales" INTO "COUNTRY_WISE_SALES" FROM "churn" WHERE time >= now() - 1d GROUP BY "country";
+- What is the trend of sales by payment method (Credit Card, Debit Card, Cash) over 1 hours?
+  SELECT SUM("sales") FROM "churn" GROUP BY time(1h),"pay_method";
+- How do sales differ between male and female customers in last 1 hr?
+  SELECT sum("sales") AS "Total Sales" FROM "churn" WHERE time >= now() - 1d GROUP BY "gender"
+- How do sales from different membership types (Normal, Premium, etc.) vary in 5 minutes?
+  SELECT SUM("sales")FROM "churn" GROUP BY time(1h), "membership";
+  
 ****User Behavior Trends****
 What is the total number of sessions (grouped by duration_(secs)) in 5-minute intervals?
 How does the number of sessions vary across browsers (e.g., Chrome, Firefox) grouped every 10 minutes?
