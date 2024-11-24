@@ -7,7 +7,7 @@ The data for the E-Commerce Website Log was sourced from Kaggle. The dataset was
 This dataset captures detailed logs from an e-commerce website, offering insights into user behavior and sales performance. It includes the time and duration of website access, IP addresses, and corresponding countries, allowing for geographic and temporal analysis. Information on the language and platform used provides insights into user preferences and device trends. Key metrics such as sales amounts, return amounts, and bytes consumed link user activity to revenue generation and data usage patterns. This dataset enables the creation of dashboards to analyze global reach, peak activity times, revenue trends, and platform optimization, making it a valuable resource for e-commerce analytics.
 
 ## Queries
-****Sales and Revenue Analysis****
+****Sales and Revenue****
 - What is the trend of sales over a time?
 
   SELECT "sales" FROM "churn" WHERE "time" >= now() - 1d;
@@ -51,5 +51,7 @@ This dataset captures detailed logs from an e-commerce website, offering insight
 
 ## Dashboard
 
+
+## Interpretations
 
 ## Interpretations
