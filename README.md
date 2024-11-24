@@ -8,7 +8,10 @@ This dataset captures detailed logs from an e-commerce website, offering insight
 
 ## Queries
 ****About Data****
-
+- What is the Total Sales?
+- What is the Mean Returned Amount?
+- How much is the Average Bytes?
+- 
 ****Sales and Revenue****
 - What is the trend of sales over a time?
 
@@ -52,7 +55,7 @@ This dataset captures detailed logs from an e-commerce website, offering insight
   SELECT moving_average("sales", 3) FROM "churn" WHERE "membership" = 'Premium' AND "network_protocol" = 'TCP' and time > now() -1h;
 
 ## Dashboard
-
+https://www.youtube.com/watch?v=KEeDcjHAKhg
 
 ## Interpretations
 **General Insights**
