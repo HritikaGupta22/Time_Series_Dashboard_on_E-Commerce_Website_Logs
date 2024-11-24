@@ -20,11 +20,10 @@ This dataset captures detailed logs from an e-commerce website, offering insight
   SELECT SUM("sales")FROM "churn" GROUP BY time(1h), "membership";
   
 ****User Behavior Trends****
-What is the total number of sessions (grouped by duration_(secs)) in 5-minute intervals?
-How does the number of sessions vary across browsers (e.g., Chrome, Firefox) grouped every 10 minutes?
-What is the hourly trend of sessions grouped by gender (Male/Female)?
-How does data usage (bytes) trend every 5 minutes, grouped by membership types (Normal, Premium)?
-
+- How does the number of sessions vary across browsers (e.g., Chrome, Firefox) grouped every 10 minutes?
+  SELECT count(“sales”) FROM "churn" GROUP BY time(1h),"accessed_Ffom";
+- How does data usage (bytes) trend every 5 minutes, grouped by membership types (Normal, Premium)?
+  SELECT sum("bytes") FROM "churn"GROUP BY time(1d),"membership";
 
 ****Returns and Refunds****
 What is the number of returned transactions (Yes/No) in the last 30 minutes, grouped by country?
